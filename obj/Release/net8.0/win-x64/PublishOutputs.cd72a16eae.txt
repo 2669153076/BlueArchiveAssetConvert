@@ -1,0 +1,2 @@
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\bin\Release\net8.0\publish\win-x64\BlueArchiveAssetConvert.pdb
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\bin\Release\net8.0\publish\win-x64\BlueArchiveAssetConvert.exe

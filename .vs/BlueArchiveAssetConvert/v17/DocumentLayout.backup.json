@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Program\\C#\\BlueArchive\\BlueArchiveAssetConvert\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6221B4-F4D2-41ED-9EFE-35FB31763B3E}|BlueArchiveAssetConvert.csproj|e:\\program\\c#\\bluearchive\\bluearchiveassetconvert\\bluearchiveassetconvert.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{BF6221B4-F4D2-41ED-9EFE-35FB31763B3E}|BlueArchiveAssetConvert.csproj|solutionrelative:bluearchiveassetconvert.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlueArchiveAssetConvert",
+              "DocumentMoniker": "E:\\Program\\C#\\BlueArchive\\BlueArchiveAssetConvert\\BlueArchiveAssetConvert.csproj",
+              "RelativeDocumentMoniker": "BlueArchiveAssetConvert.csproj",
+              "ToolTip": "E:\\Program\\C#\\BlueArchive\\BlueArchiveAssetConvert\\BlueArchiveAssetConvert.csproj",
+              "RelativeToolTip": "BlueArchiveAssetConvert.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-14T11:18:52.351Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\bin\Debug\net8.0\BlueArchiveAssetConvert.exe
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\bin\Debug\net8.0\BlueArchiveAssetConvert.deps.json
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\bin\Debug\net8.0\BlueArchiveAssetConvert.runtimeconfig.json
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\bin\Debug\net8.0\BlueArchiveAssetConvert.dll
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\bin\Debug\net8.0\BlueArchiveAssetConvert.pdb
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\bin\Debug\net8.0\MemoryPack.Core.dll
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.csproj.AssemblyReference.cache
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.GeneratedMSBuildEditorConfig.editorconfig
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.AssemblyInfoInputs.cache
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.AssemblyInfo.cs
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.csproj.CoreCompileInputs.cache
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArch.0EF0D72F.Up2Date
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.dll
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\refint\BlueArchiveAssetConvert.dll
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.pdb
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.genruntimeconfig.cache
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\ref\BlueArchiveAssetConvert.dll
