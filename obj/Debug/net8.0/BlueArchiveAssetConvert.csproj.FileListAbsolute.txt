@@ -15,3 +15,4 @@ E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\refint\BlueAr
 E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.pdb
 E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.genruntimeconfig.cache
 E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\ref\BlueArchiveAssetConvert.dll
+E:\Program\C#\BlueArchive\BlueArchiveAssetConvert\obj\Debug\net8.0\BlueArchiveAssetConvert.sourcelink.json

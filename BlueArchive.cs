@@ -5,6 +5,7 @@ using System.IO;
 using static BlueArchiveAssetConvert.Utils.Utils;
 using static BlueArchiveAssetConvert.Utils.Ask;
 using BlueArchiveAssetConvert.BlueArchiveConvert;
+using System.Text.Json;
 
 namespace Blue_Archive_Classes
 {
@@ -54,6 +55,24 @@ namespace Blue_Archive_Classes
                 default:
                     Console.WriteLine($"Error: The specified CatalogType {specifiedCatalogType} is invalid");
                     break;
+            }
+            
+            Console.WriteLine("拷贝完成" + newLineStr + "是否将Catalog转换为Json格式？(y/n)");
+
+            byte[] mediaCatalogBytes = File.ReadAllBytes(catalogBinPath);
+            MediaCatalog mediaCatalog = MemoryPack.MemoryPackSerializer.Deserialize<MediaCatalog>(mediaCatalogBytes);
+            string userConfirm = Console.ReadLine();
+            if (userConfirm.Equals("y", StringComparison.OrdinalIgnoreCase))
+            {
+                string jsonFileName = "MediaCatalog.json";
+                var jsonOptions = new JsonSerializerOptions
+                {
+                    WriteIndented = true
+                };
+
+                string json = JsonSerializer.Serialize(mediaCatalog, jsonOptions);
+                File.WriteAllText(jsonFileName, json);
+
             }
 
 
