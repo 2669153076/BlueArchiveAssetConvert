@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "pgdYK0aBuhg=",
+  "dgSpecHash": "KlR9oNtEVns=",
   "success": true,
-  "projectFilePath": "E:\\Program\\C#\\BlueArchive\\BlueArchiveAssetConvert\\BlueArchiveAssetConvert.csproj",
+  "projectFilePath": "E:\\Program\\BlueArchiveAssetConvert-main\\BlueArchiveAssetConvert.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\luoying\\.nuget\\packages\\memorypack.core\\1.21.4\\memorypack.core.1.21.4.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\memorypack.core\\1.21.4\\memorypack.core.1.21.4.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.31\\microsoft.windowsdesktop.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.31\\microsoft.netcore.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.31\\microsoft.aspnetcore.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.31\\microsoft.netcore.app.host.win-x64.8.0.31.nupkg.sha512"
   ],
   "logs": []
 }

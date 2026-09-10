@@ -6,26 +6,27 @@ using MemoryPack.Formatters;
 
 namespace BlueArchiveAssetConvert.BlueArchiveConvert
 {
-    public class MediaCatalog : IMemoryPackable<MediaCatalog>, IMemoryPackFormatterRegister
+    [MemoryPackable]
+    public partial class MediaCatalog
+        : IMemoryPackable<MediaCatalog>,
+          IMemoryPackFormatterRegister
     {
-        // Field
         private Dictionary<string, Media> _table;
 
-        // Properties
         public Dictionary<string, Media> Table
         {
-            get { return _table; }
-            set { _table = value; }
+            get => _table;
+            set => _table = value;
         }
 
-        // Static constructor
-        static MediaCatalog()
+        public MediaCatalog()
         {
-            MemoryPackFormatterProvider.Register<MediaCatalog>();
         }
 
-
-        public static void Serialize<TBufferWriter>(ref MemoryPackWriter<TBufferWriter> writer, scoped ref MediaCatalog? value) where TBufferWriter : IBufferWriter<byte>
+        public static void Serialize<TBufferWriter>(
+            ref MemoryPackWriter<TBufferWriter> writer,
+            scoped ref MediaCatalog? value)
+            where TBufferWriter : IBufferWriter<byte>
         {
             if (value == null)
             {
@@ -37,19 +38,33 @@ namespace BlueArchiveAssetConvert.BlueArchiveConvert
             writer.WriteValue(value.Table);
         }
 
-        public static void Deserialize(ref MemoryPackReader reader, scoped ref MediaCatalog? value)
+        public static void Deserialize(
+            ref MemoryPackReader reader,
+            scoped ref MediaCatalog? value)
         {
-            byte objectHeader;
-            if (!reader.TryReadObjectHeader(out objectHeader))
+            if (!reader.TryReadObjectHeader(out byte header))
             {
                 value = null;
                 return;
             }
 
-            if (objectHeader == 1)
+            if (header > 1)
             {
-                value ??= new MediaCatalog();
-                value.Table = reader.ReadValue<Dictionary<string, Media>>();
+                MemoryPackSerializationException.ThrowInvalidPropertyCount(
+                    typeof(MediaCatalog),
+                    1,
+                    header
+                );
+
+                return;
+            }
+
+            value ??= new MediaCatalog();
+
+            if (header >= 1)
+            {
+                value.Table =
+                    reader.ReadValue<Dictionary<string, Media>>();
             }
         }
 
@@ -57,17 +72,23 @@ namespace BlueArchiveAssetConvert.BlueArchiveConvert
         {
             if (!MemoryPackFormatterProvider.IsRegistered<MediaCatalog>())
             {
-                MemoryPackFormatterProvider.Register(new MemoryPackableFormatter<MediaCatalog>());
+                MemoryPackFormatterProvider.Register(
+                    new MemoryPackableFormatter<MediaCatalog>()
+                );
             }
 
             if (!MemoryPackFormatterProvider.IsRegistered<MediaCatalog[]>())
             {
-                MemoryPackFormatterProvider.Register(new ArrayFormatter<MediaCatalog>());
+                MemoryPackFormatterProvider.Register(
+                    new ArrayFormatter<MediaCatalog>()
+                );
             }
 
             if (!MemoryPackFormatterProvider.IsRegistered<Dictionary<string, Media>>())
             {
-                MemoryPackFormatterProvider.Register(new DictionaryFormatter<string, Media>());
+                MemoryPackFormatterProvider.Register(
+                    new DictionaryFormatter<string, Media>()
+                );
             }
         }
     }
